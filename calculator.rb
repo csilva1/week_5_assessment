@@ -2,13 +2,13 @@ def calculate(num1, opo, num2)
 	
 	if opo == '+'
 		value = num1 + num2
-	p result
+	#p result
 	elsif opo == '-'
 		value = num1 - num2
-	p result
+	#p result
 	elsif opo == '*'
 		value = num1 * num2
-	p result
+	#p result
 	elsif opo == '/'
 		value = num1 / num2
 	else
@@ -20,16 +20,22 @@ end
 
 calc_h = {}
 while true
-puts "What would you want to calculate? Enter the first integer:"
-input1 = gets.chomp.to_i
+	puts "What would you want to calculate? Enter the first integer:"
+	input1 = gets.chomp.to_i
+	
+	puts "Please enter the operation that you would like to use [+, -, *, /]:"
+	input2 = gets.chomp
+	
+	puts "Please enter the second integer:"
+	input3 = gets.chomp.to_i
+	
+	puts calculate(input1, input2, input3)
 
-puts "Please enter the operation that you would like to use [+, -, *, /]:"
-input2 = gets.chomp.to_i
 
-puts "Please enter the second integer:"
-input3 = gets.chomp.to_i
+end
 
-puts calculate(input1, input2, input3)
+puts calculate.inject(input1, input2, input3)
+
 # puts calculate(4, '+', 5)
 # puts calculate(3, '-', 1)
 # puts calculate(5, '*', 5)
