@@ -1,16 +1,17 @@
 def calculate(a, b, c)
-	# [gets, gets].map{ |s| s.chomp.to_i }
+	
 	if b == '+'
 		return a + c
-	puts result
+	p result
 	elsif b == '-'
 		return a - c
-	puts result
+	p result
 	elsif b == '*'
 		return a * c
-	puts result
+	p result
 else b == '/'
-	return a / c
+		return a / c
+	p result
 	end
 end
 
@@ -18,13 +19,13 @@ end
 
 puts "What would you want to calculate?"
 user_string = gets.chomp
-	
-str = user_string.split(//)
- 	
- str[0].to_i 
- str[2].to_i
- str[1].to_sym
-	p str
+
+ str = user_string.split(//)
+ ind_1 = str[0].to_i 
+ ind_2 = str[1].to_sym
+ ind_3 = str[2].to_i
+
+	p calculate(ind_1, ind_2, ind_3)
 # puts calculate(4, '+', 5)
 # puts calculate(3, '-', 1)
 # puts calculate(5, '*', 5)
