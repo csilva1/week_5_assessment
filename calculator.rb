@@ -21,8 +21,15 @@ end
 calc_h = {}
 while true
 puts "What would you want to calculate? Enter the first integer:"
-int1 = gets.chomp.to_i
+input1 = gets.chomp.to_i
 
+puts "Please enter the operation that you would like to use [+, -, *, /]:"
+input2 = gets.chomp.to_i
+
+puts "Please enter the second integer:"
+input3 = gets.chomp.to_i
+
+puts calculate(input1, input2, input3)
 # puts calculate(4, '+', 5)
 # puts calculate(3, '-', 1)
 # puts calculate(5, '*', 5)
