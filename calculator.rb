@@ -18,10 +18,13 @@ end
 
 puts "What would you want to calculate?"
 user_string = gets.chomp
-str = user_string.split(" ")
-str.each do |str|
-	puts str
-end
+	
+str = user_string.split(//)
+ 	
+ str[0].to_i 
+ str[2].to_i
+ str[1].to_sym
+	p str
 # puts calculate(4, '+', 5)
 # puts calculate(3, '-', 1)
 # puts calculate(5, '*', 5)
