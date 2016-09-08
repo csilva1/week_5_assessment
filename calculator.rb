@@ -20,6 +20,11 @@ end
 
 calc_h = {}
 while true
+puts "Do you want to use a calculator? When you are ready to quit type 'done'"
+	prompt = gets.chomp.to_s
+ 	if prompt.downcase == "done"
+   break
+   end
 	puts "What would you want to calculate? Enter the first integer:"
 	input1 = gets.chomp.to_i
 	
