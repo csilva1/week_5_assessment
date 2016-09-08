@@ -22,8 +22,12 @@ calc_h = {}
 while true
 puts "Do you want to use a calculator? When you are ready to quit type 'done'"
 	prompt = gets.chomp.to_s
- 	if prompt.downcase == "done"
-   break
+ 
+ 	if prompt == 'done'
+ 	break 
+    
+   #calc_h.each do |calculate.inject(input1, input2, input3)|
+   #puts "Calculations performed: "
    end
 	puts "What would you want to calculate? Enter the first integer:"
 	input1 = gets.chomp.to_i
@@ -40,6 +44,7 @@ puts "Do you want to use a calculator? When you are ready to quit type 'done'"
 end
 
 puts calculate.inject(input1, input2, input3)
+
 
 # puts calculate(4, '+', 5)
 # puts calculate(3, '-', 1)
